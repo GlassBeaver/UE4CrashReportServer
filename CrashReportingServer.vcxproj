@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|ARM64">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM64">
+      <Configuration>Release</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x86">
+      <Configuration>Debug</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x86">
+      <Configuration>Release</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{c339c5d7-e33a-4538-bf73-3e33e069e95e}</ProjectGuid>
+    <Keyword>Linux</Keyword>
+    <RootNamespace>CrashReportingServer</RootNamespace>
+    <MinimumVisualStudioVersion>15.0</MinimumVisualStudioVersion>
+    <ApplicationType>Linux</ApplicationType>
+    <ApplicationTypeRevision>1.0</ApplicationTypeRevision>
+    <TargetLinuxPlatform>Generic</TargetLinuxPlatform>
+    <LinuxProjectType>{D51BCBC9-82E9-4017-911E-C93873C4EA2B}</LinuxProjectType>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared" />
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>include/</IncludePath>
+    <LibraryPath>include/</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>include/</IncludePath>
+    <LibraryPath>include/</LibraryPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <ClCompile Include="include\mongoose\mongoose.c" />
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\gzip\compress.hpp" />
+    <ClInclude Include="include\gzip\config.hpp" />
+    <ClInclude Include="include\gzip\decompress.hpp" />
+    <ClInclude Include="include\gzip\utils.hpp" />
+    <ClInclude Include="include\gzip\version.hpp" />
+    <ClInclude Include="include\mongoose\mongoose.h" />
+    <ClInclude Include="include\sys\acct.h" />
+    <ClInclude Include="include\sys\auxv.h" />
+    <ClInclude Include="include\sys\bitypes.h" />
+    <ClInclude Include="include\sys\cdefs.h" />
+    <ClInclude Include="include\sys\debugreg.h" />
+    <ClInclude Include="include\sys\dir.h" />
+    <ClInclude Include="include\sys\elf.h" />
+    <ClInclude Include="include\sys\epoll.h" />
+    <ClInclude Include="include\sys\errno.h" />
+    <ClInclude Include="include\sys\eventfd.h" />
+    <ClInclude Include="include\sys\fanotify.h" />
+    <ClInclude Include="include\sys\fcntl.h" />
+    <ClInclude Include="include\sys\file.h" />
+    <ClInclude Include="include\sys\fsuid.h" />
+    <ClInclude Include="include\sys\gmon.h" />
+    <ClInclude Include="include\sys\gmon_out.h" />
+    <ClInclude Include="include\sys\inotify.h" />
+    <ClInclude Include="include\sys\io.h" />
+    <ClInclude Include="include\sys\ioctl.h" />
+    <ClInclude Include="include\sys\ipc.h" />
+    <ClInclude Include="include\sys\kd.h" />
+    <ClInclude Include="include\sys\kdaemon.h" />
+    <ClInclude Include="include\sys\klog.h" />
+    <ClInclude Include="include\sys\mman.h" />
+    <ClInclude Include="include\sys\mount.h" />
+    <ClInclude Include="include\sys\msg.h" />
+    <ClInclude Include="include\sys\mtio.h" />
+    <ClInclude Include="include\sys\param.h" />
+    <ClInclude Include="include\sys\pci.h" />
+    <ClInclude Include="include\sys\perm.h" />
+    <ClInclude Include="include\sys\personality.h" />
+    <ClInclude Include="include\sys\poll.h" />
+    <ClInclude Include="include\sys\prctl.h" />
+    <ClInclude Include="include\sys\procfs.h" />
+    <ClInclude Include="include\sys\profil.h" />
+    <ClInclude Include="include\sys\ptrace.h" />
+    <ClInclude Include="include\sys\queue.h" />
+    <ClInclude Include="include\sys\quota.h" />
+    <ClInclude Include="include\sys\raw.h" />
+    <ClInclude Include="include\sys\reboot.h" />
+    <ClInclude Include="include\sys\reg.h" />
+    <ClInclude Include="include\sys\resource.h" />
+    <ClInclude Include="include\sys\select.h" />
+    <ClInclude Include="include\sys\sem.h" />
+    <ClInclude Include="include\sys\sendfile.h" />
+    <ClInclude Include="include\sys\shm.h" />
+    <ClInclude Include="include\sys\signal.h" />
+    <ClInclude Include="include\sys\signalfd.h" />
+    <ClInclude Include="include\sys\socket.h" />
+    <ClInclude Include="include\sys\socketvar.h" />
+    <ClInclude Include="include\sys\soundcard.h" />
+    <ClInclude Include="include\sys\stat.h" />
+    <ClInclude Include="include\sys\statfs.h" />
+    <ClInclude Include="include\sys\statvfs.h" />
+    <ClInclude Include="include\sys\swap.h" />
+    <ClInclude Include="include\sys\syscall.h" />
+    <ClInclude Include="include\sys\sysctl.h" />
+    <ClInclude Include="include\sys\sysinfo.h" />
+    <ClInclude Include="include\sys\syslog.h" />
+    <ClInclude Include="include\sys\sysmacros.h" />
+    <ClInclude Include="include\sys\termios.h" />
+    <ClInclude Include="include\sys\time.h" />
+    <ClInclude Include="include\sys\timeb.h" />
+    <ClInclude Include="include\sys\timerfd.h" />
+    <ClInclude Include="include\sys\times.h" />
+    <ClInclude Include="include\sys\timex.h" />
+    <ClInclude Include="include\sys\ttychars.h" />
+    <ClInclude Include="include\sys\ttydefaults.h" />
+    <ClInclude Include="include\sys\types.h" />
+    <ClInclude Include="include\sys\ucontext.h" />
+    <ClInclude Include="include\sys\uio.h" />
+    <ClInclude Include="include\sys\ultrasound.h" />
+    <ClInclude Include="include\sys\un.h" />
+    <ClInclude Include="include\sys\unistd.h" />
+    <ClInclude Include="include\sys\user.h" />
+    <ClInclude Include="include\sys\ustat.h" />
+    <ClInclude Include="include\sys\utsname.h" />
+    <ClInclude Include="include\sys\vfs.h" />
+    <ClInclude Include="include\sys\vlimit.h" />
+    <ClInclude Include="include\sys\vm86.h" />
+    <ClInclude Include="include\sys\vt.h" />
+    <ClInclude Include="include\sys\vtimes.h" />
+    <ClInclude Include="include\sys\wait.h" />
+    <ClInclude Include="include\sys\xattr.h" />
+    <ClInclude Include="include\zconf.h" />
+    <ClInclude Include="include\zlib.h" />
+  </ItemGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <StrictAliasing>true</StrictAliasing>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <UnrollLoops>true</UnrollLoops>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <LinkTimeOptimization>true</LinkTimeOptimization>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+    </ClCompile>
+    <Link>
+      <LibraryDependencies>
+      </LibraryDependencies>
+      <AdditionalOptions>-lz %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <LinkTimeOptimization>true</LinkTimeOptimization>
+      <StrictAliasing>true</StrictAliasing>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>-lz %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

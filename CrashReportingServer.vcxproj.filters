@@ -1,0 +1,294 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="include\mongoose\mongoose.c">
+      <Filter>mongoose</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="mongoose">
+      <UniqueIdentifier>{b4d48a3b-847c-49c2-9ebb-604ab4d61ad2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gzip">
+      <UniqueIdentifier>{9620ef27-039d-458d-b7ea-9eca902ba29b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sys">
+      <UniqueIdentifier>{6897f3e2-9e1f-4d5d-8ce7-62956dad0c8b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\mongoose\mongoose.h">
+      <Filter>mongoose</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gzip\compress.hpp">
+      <Filter>gzip</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gzip\config.hpp">
+      <Filter>gzip</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gzip\decompress.hpp">
+      <Filter>gzip</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gzip\utils.hpp">
+      <Filter>gzip</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gzip\version.hpp">
+      <Filter>gzip</Filter>
+    </ClInclude>
+    <ClInclude Include="include\zconf.h" />
+    <ClInclude Include="include\zlib.h" />
+    <ClInclude Include="include\sys\acct.h">
+      <Filter>sys</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sys\auxv.h">
+      <Filter>sys</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sys\bitypes.h">
+      <Filter>sys</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sys\cdefs.h">
+      <Filter>sys</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sys\debugreg.h">
+      <Filter>sys</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sys\dir.h">
+      <Filter>sys</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sys\elf.h">
+      <Filter>sys</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sys\epoll.h">
+      <Filter>sys</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sys\errno.h">
+      <Filter>sys</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sys\eventfd.h">
+      <Filter>sys</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sys\fanotify.h">
+      <Filter>sys</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sys\fcntl.h">
+      <Filter>sys</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sys\file.h">
+      <Filter>sys</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sys\fsuid.h">
+      <Filter>sys</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sys\gmon.h">
+      <Filter>sys</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sys\gmon_out.h">
+      <Filter>sys</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sys\inotify.h">
+      <Filter>sys</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sys\io.h">
+      <Filter>sys</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sys\ioctl.h">
+      <Filter>sys</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sys\ipc.h">
+      <Filter>sys</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sys\kd.h">
+      <Filter>sys</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sys\kdaemon.h">
+      <Filter>sys</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sys\klog.h">
+      <Filter>sys</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sys\mman.h">
+      <Filter>sys</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sys\mount.h">
+      <Filter>sys</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sys\msg.h">
+      <Filter>sys</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sys\mtio.h">
+      <Filter>sys</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sys\param.h">
+      <Filter>sys</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sys\pci.h">
+      <Filter>sys</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sys\perm.h">
+      <Filter>sys</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sys\personality.h">
+      <Filter>sys</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sys\poll.h">
+      <Filter>sys</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sys\prctl.h">
+      <Filter>sys</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sys\procfs.h">
+      <Filter>sys</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sys\profil.h">
+      <Filter>sys</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sys\ptrace.h">
+      <Filter>sys</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sys\queue.h">
+      <Filter>sys</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sys\quota.h">
+      <Filter>sys</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sys\raw.h">
+      <Filter>sys</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sys\reboot.h">
+      <Filter>sys</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sys\reg.h">
+      <Filter>sys</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sys\resource.h">
+      <Filter>sys</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sys\select.h">
+      <Filter>sys</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sys\sem.h">
+      <Filter>sys</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sys\sendfile.h">
+      <Filter>sys</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sys\shm.h">
+      <Filter>sys</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sys\signal.h">
+      <Filter>sys</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sys\signalfd.h">
+      <Filter>sys</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sys\socket.h">
+      <Filter>sys</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sys\socketvar.h">
+      <Filter>sys</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sys\soundcard.h">
+      <Filter>sys</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sys\stat.h">
+      <Filter>sys</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sys\statfs.h">
+      <Filter>sys</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sys\statvfs.h">
+      <Filter>sys</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sys\swap.h">
+      <Filter>sys</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sys\syscall.h">
+      <Filter>sys</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sys\sysctl.h">
+      <Filter>sys</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sys\sysinfo.h">
+      <Filter>sys</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sys\syslog.h">
+      <Filter>sys</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sys\sysmacros.h">
+      <Filter>sys</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sys\termios.h">
+      <Filter>sys</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sys\time.h">
+      <Filter>sys</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sys\timeb.h">
+      <Filter>sys</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sys\timerfd.h">
+      <Filter>sys</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sys\times.h">
+      <Filter>sys</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sys\timex.h">
+      <Filter>sys</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sys\ttychars.h">
+      <Filter>sys</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sys\ttydefaults.h">
+      <Filter>sys</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sys\types.h">
+      <Filter>sys</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sys\ucontext.h">
+      <Filter>sys</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sys\uio.h">
+      <Filter>sys</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sys\ultrasound.h">
+      <Filter>sys</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sys\un.h">
+      <Filter>sys</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sys\unistd.h">
+      <Filter>sys</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sys\user.h">
+      <Filter>sys</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sys\ustat.h">
+      <Filter>sys</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sys\utsname.h">
+      <Filter>sys</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sys\vfs.h">
+      <Filter>sys</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sys\vlimit.h">
+      <Filter>sys</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sys\vm86.h">
+      <Filter>sys</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sys\vt.h">
+      <Filter>sys</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sys\vtimes.h">
+      <Filter>sys</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sys\wait.h">
+      <Filter>sys</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sys\xattr.h">
+      <Filter>sys</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
